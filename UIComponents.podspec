@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'UIComponents'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'Library of components for component-driven UI development'
 
   s.ios.deployment_target = '8.2'
@@ -18,4 +18,5 @@ Pod::Spec.new do |s|
       'UIComponents/TileTitleDescriptionView.swift',
        'UIComponents/Style/*.swift'
   end
+  s.dependency 'SnapKit'
 end
