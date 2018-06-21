@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImageView {
     
-    func apply(style: ImageViewStyle) {
+   open func apply(style: ImageViewStyle) {
         apply(style: style as ViewStyle)
     }
 }

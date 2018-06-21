@@ -9,32 +9,32 @@
 import UIKit
 import SnapKit
 
-class TileTitleDescriptionView<T: UIView>: UIView {
+open class TileTitleDescriptionView<T: UIView>: UIView {
     
-    var tile: T?
-    var titleLabel: UILabel?
-    var descriptionLabel: UILabel?
+    open var tile: T?
+    open var titleLabel: UILabel?
+    open var descriptionLabel: UILabel?
     
-    var tileLayoutConstants: LayoutConstants = LayoutConstants(top: 10,
-                                                               bottom: nil,
-                                                               leading: 10,
-                                                               trailing: nil,
-                                                               width: 40,
-                                                               height: 40)
+    open var tileLayoutConstants: LayoutConstants = LayoutConstants(top: 10,
+                                                                    bottom: nil,
+                                                                    leading: 10,
+                                                                    trailing: nil,
+                                                                    width: 40,
+                                                                    height: 40)
     
-    var titleLayoutConstants: LayoutConstants = LayoutConstants(top: 10,
-                                                                bottom: nil,
-                                                                leading: 10,
-                                                                trailing: 10,
-                                                                width: nil,
-                                                                height: nil)
+    open var titleLayoutConstants: LayoutConstants = LayoutConstants(top: 10,
+                                                                     bottom: nil,
+                                                                     leading: 10,
+                                                                     trailing: 10,
+                                                                     width: nil,
+                                                                     height: nil)
     
-    var descriptionLayoutConstants: LayoutConstants = LayoutConstants(top: 10,
-                                                                      bottom: 10,
-                                                                      leading: 10,
-                                                                      trailing: 10,
-                                                                      width: nil,
-                                                                      height: nil)
+    open var descriptionLayoutConstants: LayoutConstants = LayoutConstants(top: 10,
+                                                                           bottom: 10,
+                                                                           leading: 10,
+                                                                           trailing: 10,
+                                                                           width: nil,
+                                                                           height: nil)
     
     //MARK: - Internal
     

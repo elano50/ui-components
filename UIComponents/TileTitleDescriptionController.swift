@@ -8,34 +8,34 @@
 
 import UIKit
 
-class TileTitleDescriptionController<L: UIView> {
+open class TileTitleDescriptionController<L: UIView> {
     
     // MARK: - Fields
     
-    let view: TileTitleDescriptionView<L>
+    open let view: TileTitleDescriptionView<L>
     
-    var title: String? {
+    open var title: String? {
         didSet {
             view.titleLabel?.text = title
             view.resize()
         }
     }
     
-    var descriptionText: String? {
+    open var descriptionText: String? {
         didSet {
             view.descriptionLabel?.text = descriptionText
             view.resize()
         }
     }
     
-    var tileText: String? {
+    open var tileText: String? {
         didSet {
             guard let tile = view.tile as? UILabel else { fatalError("Tile is not a UILabel") }
             tile.text = tileText
         }
     }
     
-    var tileImage: UIImage? {
+    open var tileImage: UIImage? {
         didSet {
             guard let tile = view.tile as? UIImageView else { fatalError("Tile is not a UIImageView") }
             tile.image = tileImage
@@ -50,7 +50,7 @@ class TileTitleDescriptionController<L: UIView> {
     
     // MARK: - Public
     
-    public func setupViewLayout() {
+    open func setupViewLayout() {
         view.setupLayout()
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    func apply(style: ViewStyle) {
+   open func apply(style: ViewStyle) {
         contentMode = style.contentMode ?? UIViewContentMode.scaleAspectFit
         backgroundColor = style.backgroundColor ?? .white
         clipsToBounds = (style.cornerRadius ?? 0) > 0.0 || clipsToBounds == true

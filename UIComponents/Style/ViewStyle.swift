@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewStyle {
-    var backgroundColor: UIColor?
-    var cornerRadius: CGFloat?
-    var contentMode: UIViewContentMode?
+open class ViewStyle {
+   open var backgroundColor: UIColor?
+   open var cornerRadius: CGFloat?
+   open var contentMode: UIViewContentMode?
 }

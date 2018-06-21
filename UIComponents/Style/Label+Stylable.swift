@@ -10,7 +10,7 @@ import UIKit
 
 extension UILabel {
     
-    func apply(style: LabelStyle) {
+   open func apply(style: LabelStyle) {
         numberOfLines = style.numberOfLines ?? 1
         textColor = style.textColor
         textAlignment = style.textAlignment ?? .left

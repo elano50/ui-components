@@ -8,5 +8,5 @@
 
 import Foundation
 
-class ImageViewStyle: ViewStyle {
+open class ImageViewStyle: ViewStyle {
 }

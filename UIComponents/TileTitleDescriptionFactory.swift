@@ -8,25 +8,25 @@
 
 import UIKit
 
-class TileTitleDescriptionFactory {
+open class TileTitleDescriptionFactory {
     
-    public static func labelTileController(view: TileTitleDescriptionView<UILabel>) -> TileTitleDescriptionController<UILabel> {
+    open static func labelTileController(view: TileTitleDescriptionView<UILabel>) -> TileTitleDescriptionController<UILabel> {
         return TileTitleDescriptionController(view: view)
     }
     
-    public static func imageTileController(view: TileTitleDescriptionView<UIImageView>) -> TileTitleDescriptionController<UIImageView> {
+    open static func imageTileController(view: TileTitleDescriptionView<UIImageView>) -> TileTitleDescriptionController<UIImageView> {
         return TileTitleDescriptionController(view: view)
     }
     
-    public static func defaultLabelTileController() -> TileTitleDescriptionController<UILabel> {
+    open static func defaultLabelTileController() -> TileTitleDescriptionController<UILabel> {
         return labelTileController(view: defaultLabelTileView())
     }
     
-    public static func defaultImageTileController() -> TileTitleDescriptionController<UIImageView> {
+    open static func defaultImageTileController() -> TileTitleDescriptionController<UIImageView> {
         return imageTileController(view: defaultImageTileView())
     }
     
-    public static func defaultImageTileView() -> TileTitleDescriptionView<UIImageView> {
+    open static func defaultImageTileView() -> TileTitleDescriptionView<UIImageView> {
         let view = TileTitleDescriptionView<UIImageView>()
         
         view.tile = UIImageView()
@@ -52,7 +52,7 @@ class TileTitleDescriptionFactory {
         return view
     }
     
-    public static func defaultLabelTileView() -> TileTitleDescriptionView<UILabel> {
+    open static func defaultLabelTileView() -> TileTitleDescriptionView<UILabel> {
         let view = TileTitleDescriptionView<UILabel>()
                 
         view.tile = UILabel()

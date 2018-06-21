@@ -8,9 +8,9 @@
 
 import UIKit
 
-class LabelStyle: ViewStyle {
-    var numberOfLines: Int?
-    var textColor: UIColor?
-    var textAlignment: NSTextAlignment?
-    var font: UIFont?
+open class LabelStyle: ViewStyle {
+   open var numberOfLines: Int?
+   open var textColor: UIColor?
+   open var textAlignment: NSTextAlignment?
+   open var font: UIFont?
 }
