@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UIComponents_Tests' do
+  pod 'UIComponents', :path => '../'
+  
+  
+end
