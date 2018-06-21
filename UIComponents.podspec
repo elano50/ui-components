@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.1.5'
   s.summary          = 'Library of components for component-driven UI development'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.2'
 
   s.homepage         = 'https://github.com/elano50/ui-components'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
