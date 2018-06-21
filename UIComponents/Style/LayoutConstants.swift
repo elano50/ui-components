@@ -8,11 +8,11 @@
 
 import UIKit
 
-open struct LayoutConstants {
-   open var top: CGFloat?
-   open var bottom: CGFloat? = nil
-   open var leading: CGFloat?
-   open var trailing: CGFloat?
-   open var width: CGFloat?
-   open var height: CGFloat?
+public struct LayoutConstants {
+   public var top: CGFloat?
+   public var bottom: CGFloat? = nil
+   public var leading: CGFloat?
+   public var trailing: CGFloat?
+   public var width: CGFloat?
+   public var height: CGFloat?
 }
